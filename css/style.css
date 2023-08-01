@@ -27,6 +27,10 @@ ul {
   list-style-type: none;
 }
 
+.sp-none {
+  display: none;
+}
+
 
 /* =========================
 フォント
@@ -194,6 +198,7 @@ info
 ========================= */
 #info p {
   margin-bottom: 20px;
+  line-height: 1.8;
 }
 
 #info p a {
@@ -234,6 +239,8 @@ button[type="submit"] {
   height: 40px;
   color: #5d4414;
   text-align: center;
+  display: block;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -334,8 +341,8 @@ scrolldown
 .scrolldown {
   /*描画位置*/
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  bottom: 15px;
+  left: 15px;
 }
 
 /*Scrollテキストの描写*/
@@ -471,7 +478,7 @@ scrolldown
   opacity: 1;
 }
 
-/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
+/* 背景出現後にliを表示 */
 #g-nav.panelactive ul li {
   animation-name: gnaviAnime;
   animation-duration: 1s;
@@ -492,12 +499,12 @@ scrolldown
 }
 
 
-/*リストのレイアウト設定*/
-#g-nav li {
+/*リストのレイアウト設定 */
+.top_nav_item {
   text-align: center;
 }
 
-#g-nav li a {
+.top_nav_item a {
   padding: 10px;
   display: block;
 }
@@ -515,7 +522,7 @@ scrolldown
   height: 70px;
 }
 
-/*×に変化*/
+/* ×に変化 */
 .openbtn span {
   display: inline-block;
   transition: all .4s;
@@ -590,6 +597,10 @@ scrolldown
     display: none;
   }
 
+  .sp-none {
+    display: block;
+  }
+
   /* =========================
   header
   ========================= */
@@ -622,6 +633,11 @@ scrolldown
 
   .top_nav_item {
     margin-left: 20px;
+    text-align: left;
+  }
+
+  .top_nav_item:last-child a {
+    padding-right: 0;
   }
 
   .top_nav .insta img {
@@ -632,15 +648,11 @@ scrolldown
   /* =========================
   ハンバーガー
   ========================= */
-  #g-nav ul {
+  #g-nav .top_nav {
     opacity: 1;
     position: static;
     transform: none;
     display: flex;
-  }
-
-  #g-nav li {
-    text-align: left;
   }
 
   /* =========================
@@ -707,7 +719,16 @@ scrolldown
   /* =========================
   info
   ========================= */
-  #info p+p {
+  .info_box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info_box div {
+    margin-right: 10px;
+  }
+
+  .info_box p+p {
     font-weight: 500;
   }
 
@@ -723,11 +744,6 @@ scrolldown
 
   #cont_text {
     height: 240px;
-  }
-
-  button[type="submit"] {
-    display: block;
-    margin: 0 auto;
   }
 
   /* =========================
