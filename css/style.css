@@ -647,7 +647,7 @@ scrolldown
   }
 
   /* =========================
-  main
+  top
   ========================= */
   .top-wrapper2 {
     max-width: 1100px;
@@ -683,6 +683,10 @@ scrolldown
     border-radius: 30px;
   }
 
+  .shop-name {
+    font-size: 1.2em;
+  }
+
   /* =========================
   menu
   ========================= */
@@ -706,6 +710,10 @@ scrolldown
   /* =========================
   info
   ========================= */
+  #info p+p {
+    font-weight: 500;
+  }
+
   .info_a {
     display: none;
   }
