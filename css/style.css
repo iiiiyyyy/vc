@@ -50,6 +50,10 @@ h2,
   color: #609404;
 }
 
+.footer_list_item a {
+  font-size: 18px;
+}
+
 h3 {
   font-family: 'Allura', cursive;
   font-weight: 400;
@@ -123,7 +127,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 
 /* =========================
 top
@@ -279,7 +282,7 @@ footer {
 footer .shop-name {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer_list {
@@ -513,7 +516,7 @@ scrolldown
 /*========= ボタンのためのCSS ===============*/
 .openbtn {
   position: fixed;
-  top: 17px;
+  top: 20px;
   right: 15px;
   z-index: 9999;
   /*ボタンを最前面に*/
